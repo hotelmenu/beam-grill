@@ -245,9 +245,7 @@ background: linear-gradient(73deg, rgba(149,29,2,1) 0%, rgba(125,14,14,1) 39%, r
     font-style: italic;
 }
 
-.half p span {
-    color: #2f0404;
-}
+
 
 .half {
     display: block;
