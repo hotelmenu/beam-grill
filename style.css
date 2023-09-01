@@ -112,7 +112,7 @@ button {
     width: 150px;
     height: 200px; 
     border-radius: 14px;
-    object-fit: contain; 
+    object-fit: cover; 
     overflow: hidden;
     display: none;
     margin: auto;
@@ -248,6 +248,11 @@ li {
 .two {
     text-align: center;
     font-size: 28px;
+}
+
+.two a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .half {
