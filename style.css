@@ -36,18 +36,17 @@ p {
 
 .banner {
     padding: 1.2%;
-    background-color: #1a1a1a;
+    background-color: #000000;
     align-items: center;
     text-align: center;
-    background-image: url('../images/banner-2.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 20px;
     color: #ffffff;
 
 }
 
-
+.img-banner img {
+    max-width: 300px;
+}
 
 
 .small-banner{
@@ -110,13 +109,15 @@ button {
 }
 
 .img-class {
-    width: 200px;
+    width: 150px;
     height: 200px; 
     border-radius: 14px;
-    background-size: cover;
+    object-fit: contain; 
     overflow: hidden;
     display: none;
+    margin: auto;
 }
+
 
 .img-class.active {
     display: block;
