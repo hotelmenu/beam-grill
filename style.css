@@ -1,357 +1,346 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    --bg-color: #212121;
-    --product-color: rgb(129, 1, 1); 
-    --box-shadow: 10px 10px 20px 0px rgb(234, 0, 0);
-    --shadow-2: 10px 10px 20px 0px rgb(0, 0, 0);
-}
-
-
 body {
-    width: 100%;
+    margin: 0;
+    background-color: rgb(35, 35, 35);
+    color: #fff;
+    font-family: 'Merienda', cursive;
+}
+
+
+/* Landing Page */
+.main-container {
+    max-width: 500px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Playfair Display SC', serif;
-    background-color: var(--bg-color);
+    border-radius: 20px;
+    background: rgb(83,83,83);
+    background: linear-gradient(180deg, rgb(49, 49, 49) 0%, rgba(57,57,57,1) 25%, rgba(30,30,31,1) 50%, rgba(19,19,19,1) 75%, rgb(35, 35, 35) 100%);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0;
 }
-
-
-
-.divider {
-    color: antiquewhite;
-    background-color: var(--bg-color);
-}
-
-
-
-.hero {
-    padding-inline: 20px;
-    color:antiquewhite; 
+.name-container {
     margin: auto;
-}
-
-
-
-.img-section {
-    background-image: url(images/chillis\ logo.jpeg);
-    background-size: cover;
-    max-width: 400px;
-    height: 250px;
-    padding: 10px;
-    overflow: hidden;
-    box-shadow: var(--box-shadow); 
-    margin-block: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
     align-items: center;
-    justify-content: center;
-}
-
-.img-section h2 {
-    padding-inline: 50px;
-    padding-block: 70px;
-    font-size: 2rem;
     text-align: center;
 }
 
-.landing-menu {
-    max-width: 350px;
-    margin: auto;
+.top-banner h1 {
+    text-align: center;
+}
+
+.img-content-area h1 {
+    font-size: 40px;
+    margin-top: 0;
+    color: #fff;
+}
+
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    border: none;
-    outline: none;
-}
-
-.description p {
-    text-transform: capitalize; 
-
-}
-
-.description {
-    align-items: center;
-    padding-block: 20px;
-}
-
-.sect-divs {
-    box-shadow: var(--shadow-2);
-    margin-top: 10px;
-    color: black;
-    width: 100%;
-}
-
-.cocktails {
-    background-image: url(images/mai-tai.jpeg);
-    background-size: cover;
-}
-
-
-.food {
-    background-image: url(images/goat\ choma.jpeg); 
-    background-size: cover;
-}
-
-.bottle {
-    background-image: url(images/bottle\ service.jpeg);
-    background-size: cover;
-}
-.beer {
-    background-image: url(images/beers2.webp);
-    background-size: cover;
-}
-
-.liquor {
-    background-image: url(images/liqour.jpeg);
-    background-size: cover;
-}
-
-.non-alcoholic {
-    background-image: url(images/mocktails.webp);
-    background-size: cover;
-}
-
-.sect-divs {
-    color: #fff;
-    min-height: 200px;
-}
-
-.logo-area {
-    background-color: var(--product-color);
-    color: #dbf0f5;
-    padding: 20px;
-    box-shadow: var(--box-shadow);
-    text-align: center;
-}
-
-
-.call-area {
-    margin-block: 20px;
-    margin-inline: 20px;
-    background-color: var(--product-color);
-    color: #dbf0f5;
-    padding: 20px;
-    box-shadow: var(--box-shadow);
-    text-align: center;
-}
-
-
-.logo-area h1, .call-area h1 {
-    font-size: 1.3rem;
-}
-.product-class-title {
-    background-color: var(--product-color);
-    color: rgba(202,218,235,255);
-    margin-top: 5px;
-    padding: 0.85rem;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.product-class-title h1 {
-    font-size: 1.2rem;
-}
-.non {
-    font-size: 1rem;
-}
-
-.product-short-list ul li {
-    list-style: none;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    font-weight: 300;
-    display: none;
-}
-
-.product-short-list h3 {
-    text-align: center;
-    font-size: 1.25rem;
-    color: #dbf0f5;
-}
-
-.text {
-    margin-left: -25px;
-}
-
-.text li {
-    color: #ffffff;
-}
-
-
-.bottom {
-    background-color: var(--bg-color); 
-    color: rgba(202,218,235,255);
-    margin-top: -5px;
-    padding: 0.15rem;
-    text-align: center;
-    font-size: 0.75rem;
-}
-
-
-
-/* product pages */
-.product-menu {
-    background-color: var(--product-color); 
-    max-width: 350px;
-    margin: auto;
-    box-shadow: var(--shadow-2);
-}
-
-.item {
-    border-bottom: 4px solid var(--bg-color); 
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.3fr;
     gap: 20px;
 }
 
-.item:last-child {
-    border: none;
-}
-
-.item-img {
-    padding: 10px;
-    max-width: 120px;
-    max-height: 80px;
-    object-fit: cover;
+.landing-menu {
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
     overflow: hidden;
-    margin-block: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0px;
+    color: rgb(26, 25, 25);
+    text-align: left;
 }
 
-.item-img img{
+.beef{
+    width: 300px; 
+    height: 218px;
+    background-image: url(images/3.1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chicken {
+    width: 300px; 
+    height: 218px;
+    background-image: url(images/2.1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+
+
+.appetizers {
+    width: 300px; 
+    height: 218px;
+    background-image: url(images/4.1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.chips {
+    width: 300px; 
+    height: 218px;
+    background-image: url(images/5.1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fish {
+    width: 300px; 
+    height: 218px;
+    background-image: url(images/pilaufront.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.drinks {
+    width: 300px; 
+    height: 218px;
+    background-image: url(images/drinks.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.img-content-area {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 50px 0 0 10px; 
+    background-image: url(images/5.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px 0;
+    color: rgb(26, 25, 25);
+    text-align: center;
+    
+}
+
+.img-content-area p {
+    bottom: -20px;
+    color: #fff;
+}
+
+
+
+.image-area img {
+    width: 100%;
+}
+
+.image-area-content {
     width: 100%;
     height: 100%;
+    padding-block: 60px;
+    padding-inline: 10px;
+    display: block;
+    overflow-wrap: break-word; 
+    color: #fff;
+    text-align: left;
+    background-color: rgba(14, 14, 14, 0.5);
 }
 
-.changing-image {
-    width: 350px;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
+.popular-dishes {
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+}
+
+.trending {
+    max-width: 400px;
+}
+
+.img-trending {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-trending img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.btn {
+    padding: 20px;
+    background-image: url(images/2.jpg);
     margin: auto;
-    align-items: center;
-    position: fixed;
-    z-index: 100;
-    top: 20px;
-    padding: 10px;
-}
-
-.changing-image img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.price-food {
-    padding: 25px;
-}
-
-
-
-
-.price {
+    border-radius: 12px;
     align-items: center;
     text-align: center;
-    margin-top: 75%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0px;
+    color: rgb(45, 44, 44);
 }
 
-.item-label {
-    color: #ff9a02;
+.img-content-area p {
+    font-size: 24px;
+}
+
+.btn h2 {
+    color: #fff;
+}
+
+.alt {
+    background-color: rgb(43, 43, 43);
+}
+
+.small-btn {
+    background-color:  rgba(80, 158, 80, 0.75);
+    margin-bottom: 10px;
+    padding: 1px;
+    align-items: center;
+    text-align: center;
+    max-width: 135px;
+    border-radius: 26px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0;
+    color: black;
+}
+
+.small-btn p {
+    font-size: 14px;
+    color: #fff;
 }
 
 a {
     text-decoration: none;
-    color: inherit;
 }
 
-.section-end {
-    align-items: center;
-    text-align: center;
-    margin-block: 10px;
-    font-size: 1.5rem;
+.text-two {
+    margin-bottom: 30px;
 }
 
-.empty {
-    padding: 185px;
+.text-three {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
-form {
-    display: flex;
-    align-items: center;
+.text-five {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 
-form i {
-    color: #ffffff;
-    font-size: 1.5rem;
-    padding: 10px;
+.text-four {
+    font-size: 18px;
+    margin-left: -5px;
 }
 
-#search-bar {
-    width: 300px;
-    padding: 14px;
-    margin-top: -20px;
-    outline: none;
-    border: none;
-    background-color: var(--product-color);
-    color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    margin-block: 4px;
-    font-size: 1.25rem;
-    font-weight: 400;
-    font-family: 'Lobster', cursive;
-
+.text-one {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+.empty-div {
+    padding: 130px;
 }
 
-
-
-
-#search-bar::placeholder {
-    font-size: 1.25rem;
-    opacity: 0.5;
-    color: #ffffff;
-    font-family: 'Lobster', cursive;
-}
-
-/* media queries */
-
-@media (min-width: 500px) {
-    .landing-menu {
-    min-width: 500px;
-    padding-inline: 35px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px; outline: none;
-    border: none;
-}
-.img-section {
-    background-image: url(images/chillis\ logo.jpeg);
-    background-size: cover;
+/* Classes Menu Page */
+.changing-image{
     max-width: 500px;
-    height: 250px;
+    max-height: 250px;
     overflow: hidden;
-    box-shadow: var(--box-shadow);
-    /* margin-inline-start: 0px;
-    margin-inline-end: 10px; */
-    margin-bottom: 20px;
-    margin-top: 40px;
-    align-items: center;
-
+    border-radius: 14px; 
+    box-sizing: border-box;
+    box-shadow: 0 16px 16px 0;
+    color: rgb(26, 25, 25);
+    margin-block: 20px;
+    z-index: 100; 
+    position: fixed;
+    right: 10px; 
+    left: 10px;
+    margin: auto;
 }
 
-.section-end {
+.changing-image img {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.menu-container {
+    margin: auto;
+    max-width: 500px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    gap: 2rem;
+    border-bottom: 2px solid rgba(82, 82, 82, 0.5);
+}
+
+.menu-tag {
+    width: 100%;
     align-items: center;
     text-align: center;
 }
-.changing-image {
-    min-width: 500px;
+
+.small-img {
+    max-width: 60px;
+    max-height: 60px;
+    overflow: hidden;
+    border-radius: 14px;
+    margin-top: 20px;
 }
 
-.changing-image {
-    margin-left: 42.85%; 
+.small-img img {
+    width: 100%;
+    height: 100%;
 }
-.empty {
-    padding: 180px;
+
+.description-section p {
+    font-size: 12px;
 }
+
+.home-btn{
+    background-color: rgba(80, 158, 80, 0.75);
+    color: #fff;
+    padding: 5px;
+    margin-left: calc(50vw - 50px); 
+    position: fixed;
+    bottom: 0px;
+    align-items: center;
+    width: 100px;
+    z-index: 200;
+    border-radius: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px 0;
+    color: rgb(50, 50, 50);
+}
+
+.home-btn p {
+    color: #fff;
+}
+
+.title{
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    color: rgb(243, 243, 243);
+}
+
+@media (min-width: 500px){
+    .home-btn{
+        background-color:  rgba(80, 158, 80, 0.75);
+        color: #fff;
+        padding: 5px;
+        left: 0%;
+        position: fixed;
+        bottom: 0px;
+        align-items: center;
+        width: 200px;
+        z-index: 200;
+        border-radius: 14px;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: 0 0 4px 0;
+        color: rgb(50, 50, 50);
+    }
 }
